@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/survey.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <nav role="navigation" class="main-nav">
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="#">Survey</a></li>
+      </ul>
+    </nav>
+
+    <header role="banner">
+      <h1 class="img-heading">ACCESSIBLE FROG</h1>
+      <h2 class="img-heading2">we make awesome music</h2>
+    </header>
+
+    <main role="main">
+      <h1 class= "heading">Survey</h1>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/concert01.jpg" alt="first concert">
+          <div class="container">
+            <form action="survey.html" role="search" class = "survey" method="post">
+              <fieldset>
+                <legend>Favorite Member</legend>
+                <p id="favMember">Who is your favorite band member:</p>
+                <input aria-describedby="favMember" type="radio"  id="john" name="res" value="John"><label for="john"> John</label>
+                <input aria-describedby="favMember" type="radio"  id="hazzard" name="res" value="Hazzard"><label for="hazzard">Hazzard</label>
+                <input aria-describedby="favMember" type="radio"  id="bob" name="res" value="Bob"><label for="bob">Bob</label>
+                <input aria-describedby="favMember" type="radio"  id="sally" name="res" value="Sally"><label for="sally">Sally</label><br>
+
+                <label for="albums" class="favAlbum">What is your favorite album:</label><br>
+                <select aria-describedby="favAlbum" id="albums" name="select">
+                  <option value="1">A Day Of Old</option>
+                  <option value="2">Diamond Fireworks</option>
+                  <option value="3">Enjoy Your Desire</option>
+                  <option value="4">Finding My Shadow</option>
+                  <option value="5">Heroic Forever</option>
+                  <option value="6">Midnight Fires</option>
+                  <option value="7">Music Of My Life</option>
+                  <option value="8">Party For An Angel</option>
+                  <option value="9">Song For Yesterday</option>
+                  <option value="10">Street Of The Rider</option>
+                  <option value="11">This Is For You</option>
+                </select><br>
+                <p id="favAlbum">Select one favorite album</p>
+              </fieldset>
+              <label for="textarea" class="some">What is your favorite song:</label><br>
+              <textarea  id="textarea" class="some" aria-describedby="textArea"></textarea>
+              <p id="textArea">Enter favorite song</p>
+              <button aria-describedby="submitButton" class="btn-1 some" type="submit">Submit</button>
+              <p id="submitButton">Press the Submit button to get favorite song.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <h1 class= "heading">Newsletter</h1>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/the_band.jpg" alt="the band">
+            <div class="container">
+              <form role="search" class="newsletter">
+                <fieldset>
+                  <legend>Newsletter Information</legend>
+                  <label for="name">Name: <input aria-describedby="textName" type ="text" id="name" name="textfield"></label><br>
+                  <p id="textName">Enter your name</p>
+                  <label for="email">Email: <input aria-describedby="textEmail" type ="email" id="email" name="textfield"></label><br>
+                  <p id="textEmail">Enter your email</p>
+                  <label for="r-email">Retype Email: <input aria-describedby="retypeEmail" type ="email" id="r-email" name="textfield"></label><br>
+                  <p id="retypeEmail">retype your email</p>
+                </fieldset>
+                  <button aria-describedby="signupButton" class="btn-2" type="submit">Sign Up</button>
+                  <p id="signupButton">Press the Sign Up button to recieve monthly newsletter.</p>
+              </form>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <ul>
+        <li><a href="http://twitter.com/essim_b" class="social twitter">twitter link</a></li>
+        <li><a href="#" class="social youtube">youtube link</a></li>
+        <li><a href="#" class="social spotify">spotify link</a></li>
+      </ul>
+      <p class="copyright">Copyright 2015, Accessible Frog</p>
+      <p class="made">Made by Samuel Essim</p>
+    </footer>
+  </body>
+</html>

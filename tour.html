@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <link href="css/styles.css" rel="stylesheet" type="text/css" />
+      <link href="css/tour.css" rel="stylesheet" type="text/css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+      <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <nav role="navigation" class="main-nav">
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="#">Tour</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+
+    <header role="banner">
+      <h1 class="img-heading">ACCESSIBLE FROG</h1>
+      <h2 class="img-heading2">we make awesome music</h2>
+    </header>
+
+    <main role="main" >
+      <div class="card">
+        <div class="flex">
+        <!-- The following images are decorative for this project. -->
+        <!-- Please see the project instructions for information on how to handle these. -->
+          <img class="pick" src= "img/guitar_pick.png" alt="">
+          <h2 class="heading">Tour Dates</h2>
+          <img class="pick" src= "img/guitar_pick.png" alt="">
+          <table>
+            <caption style="visibility: hidden">Tour Dates</caption>
+              <thead>
+                <tr>
+                  <th id="date" scope="col">Date</th>
+                  <th id="ven" scope="col">Venue</th>
+                  <th id="loc" scope="col">Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <th id="mar" scope="row">Mar 10 - 12</th>
+                    <td headers="mar ven">The Warfield</td>
+                    <td headers="mar loc">San Francisco, CA</td>
+                  </tr>
+                  <tr>
+                    <th id="mar2" scope="row">Mar 20 - 23</th>
+                    <td headers="mar2 ven">Pepsi Center</td>
+                    <td headers="mar2 loc">Denver, CO</td>
+                  </tr>
+                  <tr>
+                    <th id="apr" scope="row">Apr 2 - 4</th>
+                    <td headers="apr ven">Beacon Theatre</td>
+                    <td headers="apr loc">New York City, NY</td>
+                  </tr>
+                  <tr>
+                    <th id="apr2" scope="row">Apr 10</th>
+                    <td headers="apr2 ven">Paramount Theatre</td>
+                    <td headers="apr2 loc">Seattle, WA</td>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer role="contentinfo">
+      <ul>
+        <li><a href="http://twitter.com/essim_b" class="social twitter">twitter link</a></li>
+        <li><a href="#" class="social youtube">youtube link</a></li>
+        <li><a href="#" class="social spotify">spotify link</a></li>
+      </ul>
+      <p class="copyright">Copyright 2015, Accessible Frog</p>
+      <p class="made">Made by Samuel Essim</p>
+    </footer>
+  </body>
+</html>
